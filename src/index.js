@@ -7,6 +7,11 @@ import Voiture from './Voiture';
 import Garage from './Garage';
 import Game from './Game';
 import Clock from './Clock';
+import Toggle from './Toggle';
+import LoginControl from './LoginControl';
+import Mailbox from './Mailbox';
+import Liste from './Liste';
+
 import * as serviceWorker from './serviceWorker';
 
 // function Tick2(){
@@ -25,6 +30,16 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<Game />, document.getElementById('root'));
 ReactDOM.render(<Clock />,document.getElementById('popo'));
+// ReactDOM.render(<Toggle />,document.getElementById('popo2'));
+ReactDOM.render(<LoginControl />,document.getElementById('root2'));
+
+const numbers= [4,9,3,8,2];
+ReactDOM.render(<Liste numbers={numbers}/>,document.getElementById('popo3'));
+
+const messages = ['coucou j espere que tu passes une bonne journnee','Re ca va','bye je pars'];
+ReactDOM.render(<Mailbox messagesnonlus={messages} />,document.getElementById('popo2'));
+
+
 // ReactDOM.render(<Tick />,document.getElementById('popo'));
 //ReactDOM.render(<Garage />,document.getElementById('popo'));
 
